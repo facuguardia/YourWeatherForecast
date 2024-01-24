@@ -6,11 +6,6 @@ import {DetailsScreen} from '../screens/DetailsScreen';
 
 const Stack = createStackNavigator();
 
-type RootStackParams = {
-  HomeScreen: undefined;
-  DetailsScreen: {id: number; name: string};
-};
-
 export const Navigation = () => {
   return (
     <Stack.Navigator

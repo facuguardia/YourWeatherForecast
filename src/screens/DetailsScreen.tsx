@@ -1,10 +1,14 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-export const DetailsScreen = () => {
+interface Props {
+  name?: string;
+}
+
+export const DetailsScreen = ({name}: Props) => {
   return (
     <View>
-      <Text>DetailsScreen</Text>
+      <Text>{name}</Text>
     </View>
   );
 };
